@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tictactoe_ip2365"
+version = "0.1.0"
+description = "This test package is my first package! This package includes necessary functions to execute a successful game of tictactoe virtually. Functionalities here include creating a new game with a blank board, making a move on the game board, checking for a present winner, and resetting the board. Enjoy!"
+authors = ["Ines Perez"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
