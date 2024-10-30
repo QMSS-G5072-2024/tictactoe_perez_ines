@@ -10,6 +10,14 @@ readme = "README.md"
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.3.3"
+sphinx-rtd-theme = "^3.0.1"
+pytest-cov = "^6.0.0"
+
 [tool.semantic_release]
 version_toml = [
     "pyproject.toml:tool.poetry.version",

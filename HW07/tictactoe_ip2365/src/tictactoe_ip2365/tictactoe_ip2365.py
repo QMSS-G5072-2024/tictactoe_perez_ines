@@ -1,3 +1,4 @@
+
 def initialize_board():
     """
     Creates a 3x3 Tic-Tac-Toe board initialized with empty spaces.
@@ -131,3 +132,4 @@ def reset_game():
     [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
     """
     return initialize_board()
+
